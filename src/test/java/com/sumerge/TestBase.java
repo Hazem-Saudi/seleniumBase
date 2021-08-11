@@ -24,10 +24,10 @@ public class TestBase
         driver.manage().window().maximize();
         driver.get(Constants.APPLICATION_HOST);
     }
-    @AfterMethod
+    /*@AfterMethod
     public void stopDriver(){
         driver.quit();
-    }
+    }*/
 
 
 }
