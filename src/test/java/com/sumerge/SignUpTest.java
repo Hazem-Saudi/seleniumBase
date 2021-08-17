@@ -18,7 +18,7 @@ public class SignUpTest extends TestBase{
     @DataProvider(name = "emails")
     public Object[][] testData() throws IOException {
         ReadFromExcel excelObject =new ReadFromExcel();
-        return (excelObject.getCertainData(0,2,0,1));
+        return (excelObject.getCertainData(4,6,0,1));
     }
 
     @Test(dataProvider = "emails")
