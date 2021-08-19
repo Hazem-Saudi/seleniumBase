@@ -16,7 +16,7 @@ public class CartPage extends BasePage {
     List<WebElement> productNameClass;
 
     public String getProductName() {
-        Wait.waitClass(10,"product-name",driver);
+        Wait.waitClass(10, "product-name", driver);
         return (productNameClass.get(productNameClass.size() - 1).getText());
     }
 }

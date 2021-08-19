@@ -19,8 +19,8 @@ public class CreateAccountPage extends BasePage {
     WebElement registrationFormHeading;
 
     public String getRegFormTitle() {
-        Wait.waitFor("cssSelector","#account-creation_form > div:nth-child(1) > h3",
-                driver,10);
+        Wait.waitFor("cssSelector", "#account-creation_form > div:nth-child(1) > h3",
+                driver, 10);
         return (registrationFormHeading.getText());
     }
 

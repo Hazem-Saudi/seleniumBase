@@ -25,7 +25,7 @@ public class CartTest extends BaseTest {
 
     }
 
-    @Test(dataProvider ="Cart Test Data")
+    @Test(dataProvider = "Cart Test Data")
     public void cartTest(String email, String password) {
         homePageObject = new HomePage(driver);
         signInObject = new SignInPage(driver);

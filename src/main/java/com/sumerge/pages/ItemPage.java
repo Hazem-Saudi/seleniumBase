@@ -17,12 +17,12 @@ public class ItemPage extends BasePage {
     WebElement proceedToCheckoutButton;
 
     public void clickAddToCart() {
-        Wait.waitFor("name","Submit",driver,10);
+        Wait.waitFor("name", "Submit", driver, 10);
         addToCartButton.click();
     }
 
     public void clickProceedToCheckOut() {
-        Wait.waitFor("linkText","Proceed to checkout",driver,10);
+        Wait.waitFor("linkText", "Proceed to checkout", driver, 10);
         proceedToCheckoutButton.click();
     }
 

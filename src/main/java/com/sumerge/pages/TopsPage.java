@@ -16,7 +16,7 @@ public class TopsPage extends BasePage {
     List<WebElement> itemsList;
 
     public void selectItem(String itemName) {
-        Wait.waitFor("class","product-name",driver,10);
+        Wait.waitFor("class", "product-name", driver, 10);
         for (int i = 0; i < itemsList.size(); i++) {
             if (itemName.equals(itemsList.get(i).getText())) {
                 itemsList.get(i).click();

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test parallel="classes" thread-count="3" name="E:/Sumerge/Training/Selenium Training">
+    <test parallel="classes" thread-count="2" name="E:/Sumerge/Training/Selenium Training">
         <classes>
             <class name="com.sumerge.tests.CartTest">
                 <methods>

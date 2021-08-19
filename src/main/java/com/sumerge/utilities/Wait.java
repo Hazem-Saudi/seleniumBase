@@ -7,14 +7,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Wait {
 
-    public static void waitClass(int seconds, String className, WebDriver driver){
+    public static void waitClass(int seconds, String className, WebDriver driver) {
         WebDriverWait wait = new WebDriverWait(driver, seconds);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.className(className)));
     }
 
-    public static void waitFor(String type, String typeName, WebDriver driver, int seconds){
+    public static void waitFor(String type, String typeName, WebDriver driver, int seconds) {
         WebDriverWait wait = new WebDriverWait(driver, seconds);
-        switch(type) {
+        switch (type) {
             case "class":
                 wait.until(ExpectedConditions.presenceOfElementLocated(By.className(typeName)));
                 break;

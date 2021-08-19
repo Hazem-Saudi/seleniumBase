@@ -40,7 +40,7 @@ public class SignInPage extends BasePage {
     }
 
     public String getErrorMsg() {
-        Wait.waitFor("xpath","//*[@id=\"center_column\"]/div[1]/ol/li",driver,10);
+        Wait.waitFor("xpath", "//*[@id=\"center_column\"]/div[1]/ol/li", driver, 10);
         return (errorMsg.getText());
     }
 
