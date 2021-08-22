@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test parallel="classes" thread-count="2" name="E:/Sumerge/Training/Selenium Training">
+    <test parallel="methods" thread-count="1" name="E:/Sumerge/Training/Selenium Training">
         <classes>
             <class name="com.sumerge.tests.CartTest">
                 <methods>
@@ -13,7 +13,7 @@
                     <include name="createAccountTest"/>
                 </methods>
             </class>
-            <class name="com.sumerge.tests.HomePageTest">
+            <!--><class name="com.sumerge.tests.HomePageTest">
                 <methods>
                     <include name="homePageTest"/>
                 </methods>
@@ -32,7 +32,7 @@
                 <methods>
                     <include name="signInTest"/>
                 </methods>
-            </class>
+            </class><-->
         </classes>
     </test>
 </suite>

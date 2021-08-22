@@ -14,8 +14,9 @@ public class HomePage extends BasePage {
     @FindBy(linkText = "Sign in")
     WebElement signInButton;
 
-    public void clickSignIn() {
+    public SignInPage clickSignIn() {
         Wait.waitFor("linkText","Sign in",driver,10);
         signInButton.click();
+        return new SignInPage(driver);
     }
 }

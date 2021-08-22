@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="465.229" tests="11" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="145.272" tests="11" errors="0" skipped="0" failures="2">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Users\hsaudi\AppData\Local\Programs\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\hsaudi\AppData\Local\Temp\surefire4427016464624589104\surefirebooter5014387701462033044.jar C:\Users\hsaudi\AppData\Local\Temp\surefire4427016464624589104 2021-08-19T11-41-50_285-jvmRun1 surefire13215519671681972344tmp surefire_013456388892680558231tmp"/>
+    <property name="sun.java.command" value="C:\Users\hsaudi\AppData\Local\Temp\surefire16233622518554763563\surefirebooter9411077607011712041.jar C:\Users\hsaudi\AppData\Local\Temp\surefire16233622518554763563 2021-08-22T18-53-53_920-jvmRun1 surefire5311832718882085929tmp surefire_03163304537811923453tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="E:\Sumerge\Training\Selenium Training\target\test-classes;E:\Sumerge\Training\Selenium Training\target\classes;C:\Users\hsaudi\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\hsaudi\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\hsaudi\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\hsaudi\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\hsaudi\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\hsaudi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\hsaudi\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\hsaudi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\hsaudi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\hsaudi\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\hsaudi\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\hsaudi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\hsaudi\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\hsaudi\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\hsaudi\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\hsaudi\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\hsaudi\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\hsaudi\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\hsaudi\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\hsaudi\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\hsaudi\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\hsaudi\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\hsaudi\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\hsaudi\.m2\repository\org\apache\poi\poi-ooxml\3.9\poi-ooxml-3.9.jar;C:\Users\hsaudi\.m2\repository\org\apache\poi\poi\3.9\poi-3.9.jar;C:\Users\hsaudi\.m2\repository\commons-codec\commons-codec\1.5\commons-codec-1.5.jar;C:\Users\hsaudi\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.9\poi-ooxml-schemas-3.9.jar;C:\Users\hsaudi\.m2\repository\org\apache\xmlbeans\xmlbeans\2.3.0\xmlbeans-2.3.0.jar;C:\Users\hsaudi\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\hsaudi\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\hsaudi\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\hsaudi\AppData\Local\Temp\surefire4427016464624589104\surefirebooter5014387701462033044.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\hsaudi\AppData\Local\Temp\surefire16233622518554763563\surefirebooter9411077607011712041.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.11+9"/>
@@ -60,15 +60,43 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="cartTest" classname="com.sumerge.tests.CartTest" time="61.031"/>
-  <testcase name="cartTest" classname="com.sumerge.tests.CartTest" time="47.648"/>
-  <testcase name="createAccountTest" classname="com.sumerge.tests.CreateAccountPageTest" time="25.879"/>
-  <testcase name="createAccountTest" classname="com.sumerge.tests.CreateAccountPageTest" time="26.69"/>
-  <testcase name="homePageTest" classname="com.sumerge.tests.HomePageTest" time="11.028"/>
-  <testcase name="signInTest" classname="com.sumerge.tests.InvalidSignInTest" time="17.935"/>
-  <testcase name="signInTest" classname="com.sumerge.tests.InvalidSignInTest" time="14.945"/>
-  <testcase name="signInPageTest" classname="com.sumerge.tests.SignUpTest" time="17.268"/>
-  <testcase name="signInPageTest" classname="com.sumerge.tests.SignUpTest" time="17.761"/>
-  <testcase name="signInTest" classname="com.sumerge.tests.ValidSignInTest" time="18.076"/>
-  <testcase name="signInTest" classname="com.sumerge.tests.ValidSignInTest" time="14.847"/>
+  <testcase name="cartTest" classname="com.sumerge.tests.CartTest" time="3.115">
+    <failure message="The following asserts failed:&#10;	expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: 
+The following asserts failed:
+	expected [true] but found [false]
+	at com.sumerge.tests.CartTest.cartTest(CartTest.java:31)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 20242
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1629651237.484][WARNING]: This version of ChromeDriver has not been tested with Chrome version 92.
+Aug 22, 2021 6:53:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="cartTest" classname="com.sumerge.tests.CartTest" time="0.007">
+    <failure message="The following asserts failed:&#10;	expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: 
+The following asserts failed:
+	expected [true] but found [false]
+	at com.sumerge.tests.CartTest.cartTest(CartTest.java:27)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 47811
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1629651251.909][WARNING]: This version of ChromeDriver has not been tested with Chrome version 92.
+Aug 22, 2021 6:54:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="createAccountTest" classname="com.sumerge.tests.CreateAccountPageTest" time="6.966"/>
+  <testcase name="createAccountTest" classname="com.sumerge.tests.CreateAccountPageTest" time="6.456"/>
+  <testcase name="homePageTest" classname="com.sumerge.tests.HomePageTest" time="0.007"/>
+  <testcase name="signInTest" classname="com.sumerge.tests.InvalidSignInTest" time="3.731"/>
+  <testcase name="signInTest" classname="com.sumerge.tests.InvalidSignInTest" time="3.36"/>
+  <testcase name="signInPageTest" classname="com.sumerge.tests.SignUpTest" time="3.607"/>
+  <testcase name="signInPageTest" classname="com.sumerge.tests.SignUpTest" time="3.407"/>
+  <testcase name="signInTest" classname="com.sumerge.tests.ValidSignInTest" time="5.368"/>
+  <testcase name="signInTest" classname="com.sumerge.tests.ValidSignInTest" time="3.268"/>
 </testsuite>

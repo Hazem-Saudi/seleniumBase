@@ -1,25 +1,27 @@
 package com.sumerge.tests;
 
 import com.sumerge.utilities.Constants;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import com.sumerge.utilities.DriverHandler;
 import org.testng.annotations.*;
-
+import org.testng.asserts.SoftAssert;
 
 public class BaseTest {
-    public static WebDriver driver;
+    private SoftAssert softly = new SoftAssert();
+
+    public void checkPage(String pageTitle){
+        softly.assertTrue(DriverHandler.getDriver().getTitle().equals(pageTitle));
+        softly.assertAll();
+    }
 
     @BeforeMethod
     public void startDriver() {
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get(Constants.APPLICATION_HOST);
+        DriverHandler.initiateDriver();
+        DriverHandler.getDriver().get(Constants.APPLICATION_HOST);
     }
 
     @AfterMethod
     public void stopDriver() {
-        driver.quit();
+        DriverHandler.quitDriver();
     }
 
 

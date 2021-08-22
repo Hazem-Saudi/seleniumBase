@@ -1,5 +1,6 @@
 package com.sumerge.pages;
 
+import com.sumerge.utilities.DriverHandler;
 import com.sumerge.utilities.Wait;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,18 +10,19 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.concurrent.TimeUnit;
+
 public class CreateAccountPage extends BasePage {
 
-    public CreateAccountPage(WebDriver dr) {
-        super(dr);
+    public CreateAccountPage(WebDriver driver) {
+        super(driver);
     }
-
-    @FindBy(css = "#account-creation_form > div:nth-child(1) > h3")
+    @FindBy(xpath = "//h3[@class='page-subheading']")
     WebElement registrationFormHeading;
 
     public String getRegFormTitle() {
-        Wait.waitFor("cssSelector", "#account-creation_form > div:nth-child(1) > h3",
-                driver, 10);
+        Wait.waitFor("xpath","//div[@class='account_creation']" +
+                "//h3[@class='page-subheading']",driver,10);
         return (registrationFormHeading.getText());
     }
 

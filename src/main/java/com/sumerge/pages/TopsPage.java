@@ -15,7 +15,7 @@ public class TopsPage extends BasePage {
     @FindBy(className = "product-name")
     List<WebElement> itemsList;
 
-    public void selectItem(String itemName) {
+    public ItemPage selectItem(String itemName) {
         Wait.waitFor("class", "product-name", driver, 10);
         for (int i = 0; i < itemsList.size(); i++) {
             if (itemName.equals(itemsList.get(i).getText())) {
@@ -23,7 +23,7 @@ public class TopsPage extends BasePage {
                 break;
             }
         }
-
+        return new ItemPage(driver);
     }
 
 }

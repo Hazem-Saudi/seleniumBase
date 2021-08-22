@@ -13,7 +13,8 @@ public class UserPage extends BasePage {
     @FindBy(className = "sf-with-ul")
     WebElement womenSectionButton;
 
-    public void clickWomenSectionBtn() {
+    public WomenSectionPage clickWomenSectionBtn() {
         womenSectionButton.click();
+        return new WomenSectionPage(driver);
     }
 }

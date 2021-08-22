@@ -21,9 +21,10 @@ public class ItemPage extends BasePage {
         addToCartButton.click();
     }
 
-    public void clickProceedToCheckOut() {
+    public CartPage clickProceedToCheckOut() {
         Wait.waitFor("linkText", "Proceed to checkout", driver, 10);
         proceedToCheckoutButton.click();
+        return new CartPage(driver);
     }
 
 }

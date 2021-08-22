@@ -17,9 +17,10 @@ public class SignInPage extends BasePage {
     @FindBy(id = "SubmitCreate")
     WebElement signUpSubmitBox;
 
-    public void signUp(String email) {
+    public CreateAccountPage signUp(String email) {
         signUpEmailBox.sendKeys(email);
         signUpSubmitBox.click();
+        return new CreateAccountPage(driver);
     }
 
     @FindBy(id = "email")
@@ -33,10 +34,12 @@ public class SignInPage extends BasePage {
     @FindBy(xpath = "//*[@id=\"center_column\"]/div[1]/ol/li")
     WebElement errorMsg;
 
-    public void singIn(String email, String password) {
+
+    public UserPage singIn(String email, String password) {
         signInEmailBox.sendKeys(email);
         signInPasswordBox.sendKeys(password);
         signInButton.click();
+        return new UserPage(driver);
     }
 
     public String getErrorMsg() {

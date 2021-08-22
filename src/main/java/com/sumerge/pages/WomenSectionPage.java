@@ -1,5 +1,4 @@
 package com.sumerge.pages;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,7 +12,8 @@ public class WomenSectionPage extends BasePage {
     @FindBy(linkText = "Tops")
     WebElement topsButton;
 
-    public void clickTopsBtn() {
+    public TopsPage clickTopsBtn() {
         topsButton.click();
+        return new TopsPage(driver);
     }
 }

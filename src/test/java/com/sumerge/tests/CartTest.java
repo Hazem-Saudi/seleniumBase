@@ -2,6 +2,8 @@ package com.sumerge.tests;
 
 import com.sumerge.pages.*;
 import com.sumerge.utilities.Constants;
+import com.sumerge.utilities.CustomDataProvider;
+import com.sumerge.utilities.DriverHandler;
 import com.sumerge.utilities.ReadFromExcel;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -19,29 +21,22 @@ public class CartTest extends BaseTest {
     CartPage cartPageObject;
     private SoftAssert softly = new SoftAssert();
 
-    @DataProvider(name = "Cart Test Data")
-    public Object[][] testData() throws IOException {
-        return (ReadFromExcel.getCertainData(0, 2, 0, 2));
-
-    }
-
-    @Test(dataProvider = "Cart Test Data")
+    @Test(dataProvider = "Cart Test Data",dataProviderClass = CustomDataProvider.class)
     public void cartTest(String email, String password) {
-        homePageObject = new HomePage(driver);
-        signInObject = new SignInPage(driver);
-        userPageObject = new UserPage(driver);
-        womenPageObject = new WomenSectionPage(driver);
-        topsPageObject = new TopsPage(driver);
-        itemPageObject = new ItemPage(driver);
-        cartPageObject = new CartPage(driver);
-
-        homePageObject.clickSignIn();
-        signInObject.singIn(email, password);
-        userPageObject.clickWomenSectionBtn();
-        womenPageObject.clickTopsBtn();
-        topsPageObject.selectItem(Constants.itemNames[1]);
+        homePageObject = new HomePage(DriverHandler.getDriver());
+        checkPage("My Store");
+        signInObject = homePageObject.clickSignIn();
+        checkPage("Login - My Store");
+        userPageObject = signInObject.singIn(email, password);
+        checkPage("My account - My Store");
+        womenPageObject = userPageObject.clickWomenSectionBtn();
+        checkPage("Women - My Store");
+        topsPageObject = womenPageObject.clickTopsBtn();
+        checkPage("Tops - My Store");
+        itemPageObject = topsPageObject.selectItem(Constants.itemNames[1]);
         itemPageObject.clickAddToCart();
-        itemPageObject.clickProceedToCheckOut();
+        cartPageObject = itemPageObject.clickProceedToCheckOut();
+        checkPage("Order - My Store");
         softly.assertTrue(cartPageObject.getProductName().equals(Constants.itemNames[1]));
         softly.assertAll();
 

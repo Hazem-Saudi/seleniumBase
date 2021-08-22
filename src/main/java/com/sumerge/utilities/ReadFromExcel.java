@@ -13,9 +13,9 @@ import java.io.IOException;
 
 public class ReadFromExcel {
 
-    public static Object[][] getExcelData() throws IOException {
+    public static Object[][] getExcelData(String fileName) throws IOException {
         FileInputStream file = new FileInputStream(
-                new File(System.getProperty("user.dir") + "\\src\\main\\resources\\Book1.xlsx"));
+                new File(System.getProperty("user.dir") + "\\src\\main\\resources\\"+fileName+".xlsx"));
         XSSFWorkbook workbook = new XSSFWorkbook(file);
         XSSFSheet sheet = workbook.getSheetAt(0);
         int rowsNo = sheet.getLastRowNum();
@@ -43,16 +43,21 @@ public class ReadFromExcel {
         return (data);
     }
 
-    public static String[][] getCertainData(int startRow, int endRow, int startCol, int endCol) throws IOException {
-        Object data[][] = getExcelData();
-        String[][] requiredData = new String[endRow - startRow][endCol - startCol];
-        int rows = endRow - startRow;
+    public static Object[][] getCols(String fileName, int startCol, int endCol) throws IOException {
+        Object data[][] = getExcelData(fileName);
+        String[][] requiredData = new String[data.length][endCol - startCol];
+        int rows = data.length;
         int cols = endCol - startCol;
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                requiredData[i][j] = data[startRow + i][startCol + j].toString();
+                requiredData[i][j] = data[i][startCol + j].toString();
             }
         }
         return (requiredData);
+    }
+
+    public static void  main (String args[]) throws IOException {
+        System.out.println(getExcelData("CreateAccountTestData").length);
+
     }
 }

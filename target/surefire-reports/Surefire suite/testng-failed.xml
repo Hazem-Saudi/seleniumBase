@@ -3,38 +3,10 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.sumerge.tests.SignUpTest">
-        <methods>
-          <include name="signInPageTest" invocation-numbers="0 1"/>
-          <include name="stopDriver"/>
-          <include name="startDriver"/>
-        </methods>
-      </class> <!-- com.sumerge.tests.SignUpTest -->
-      <class name="com.sumerge.tests.InvalidSignInTest">
-        <methods>
-          <include name="signInTest" invocation-numbers="0 1"/>
-          <include name="stopDriver"/>
-          <include name="startDriver"/>
-        </methods>
-      </class> <!-- com.sumerge.tests.InvalidSignInTest -->
-      <class name="com.sumerge.tests.CreateAccountPageTest">
-        <methods>
-          <include name="createAccountTest" invocation-numbers="1"/>
-          <include name="stopDriver"/>
-          <include name="startDriver"/>
-        </methods>
-      </class> <!-- com.sumerge.tests.CreateAccountPageTest -->
-      <class name="com.sumerge.tests.ValidSignInTest">
-        <methods>
-          <include name="signInTest" invocation-numbers="1"/>
-          <include name="stopDriver"/>
-          <include name="startDriver"/>
-        </methods>
-      </class> <!-- com.sumerge.tests.ValidSignInTest -->
       <class name="com.sumerge.tests.CartTest">
         <methods>
           <include name="stopDriver"/>
-          <include name="cartTest"/>
+          <include name="cartTest" invocation-numbers="0 1"/>
           <include name="startDriver"/>
         </methods>
       </class> <!-- com.sumerge.tests.CartTest -->
